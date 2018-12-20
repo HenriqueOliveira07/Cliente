@@ -1,0 +1,11 @@
+<div *ngIf="selectedClient">
+  <h2>{{selectedClient.name | uppercase}} Selecionado</h2>
+  <div>
+      <span>ID:</span>
+      {{selectedClient.id}}
+  </div>
+  <label>
+      Nome
+      <input [(ngModel)]="selectedClient.name">
+  </label>
+</div>

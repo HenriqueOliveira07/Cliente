@@ -1,0 +1,14 @@
+<div>
+  <h2>Clientes Cadastrados</h2>
+  <ul class="Clientes">
+      <li 
+      *ngFor = "let Clientes of Clientes"
+      (click) = "onSelect(cliente)"
+      [class.selected]="hero === selectedClient"
+      >
+          <span class="badge">{{cliente.id}}</span>
+          {{cliente.name}}
+      </li>
+  </ul>
+</div>
+<app-cliente-detail [selectedClient] = "selectedClient"></app-cliente-detail>
