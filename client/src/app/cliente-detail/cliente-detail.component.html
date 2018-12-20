@@ -1,8 +1,10 @@
 <div *ngIf="selectedClient">
-  <h2>{{selectedClient.name | uppercase}} Selecionado</h2>
+  <h2>{{selectedClient.name | uppercase}} Escolhido</h2>
   <div>
       <span>ID:</span>
       {{selectedClient.id}}
+      <span>CPF:</span>
+      {{selectedClient.cpf}}
   </div>
   <label>
       Nome
